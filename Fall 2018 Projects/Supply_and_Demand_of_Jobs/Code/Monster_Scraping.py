@@ -1,7 +1,6 @@
 # Author: Harsha Mallajosyula
-# MPP Candidate 2015
-# Goldman School of Public Policy
-# UC Berkeley
+# Data Scientist
+# City of Los Angeles - Mayor's Office
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
