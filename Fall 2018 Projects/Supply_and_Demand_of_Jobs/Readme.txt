@@ -1,0 +1,1 @@
+This is the folder for Data Angels Project - Supply and Demand of Jobs. Here you will find the project code, data and visuals.
