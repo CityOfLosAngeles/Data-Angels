@@ -2,7 +2,7 @@
 # from scraped job posting data.
 
 # IMPORT LIBRARIES --------------------------------------------------------
-pacman::p_load(readr, dplyr, stringr)
+pacman::p_load(readr, dplyr, stringr, ggplot2)
 
 # IMPORT DATA -------------------------------------------------------------
 # Make sure to set working directory.
@@ -49,7 +49,6 @@ job_postings = mutate(job_postings,
                       ed_comp_sci_field = str_count(job_description, "computer science"), 
                       ed_eng_field = str_count(job_description, "engineering"),
                       ed_stem_field = str_count(job_description, "stem"), 
-                      ed_ds_field = str_count(job_description, "data science"),
                       ed_bootcamp = str_count(job_description, "bootcamp"), 
                       ed_ga = str_count(job_description, "general assembly"))
 
@@ -116,6 +115,45 @@ job_postings = mutate(job_postings,
                       `programming_c++` = str_count(job_description, "c\\++"),
                       `programming_c#` = str_count(job_description, "c#"),
                       programming_c = str_count(job_description, " c,") + str_count(job_description, " c "),   # This one is tricky...
-                      programming_r = str_count(job_description, " r,") + str_count(job_description, " r "))   # This one is tricky...                     
+                      programming_r = str_count(job_description, " r,") + str_count(job_description, " r "))   # This one is tricky...                  
 
+# CREATE BAR GRAPHS OF EDUCATION AND PROGRAMMING REQUIREMENT COUNTS -------
+# This section creates bar graphs to analyze the counts of the 
+# variables created above.
+
+  # Get educational and programming requirement variable counts.
+  counts = select_if(job_postings, is.numeric) %>% colSums
+  
+  # Create tibble.
+  counts_tibble = tibble(variable = attr(counts, "names"), 
+                         counts = counts)
+  
+  # Create bar graph for educational requirements.
+  ggplot(data = filter(counts_tibble, str_sub(variable, 1, 3) == "ed_"), 
+         aes(x = reorder(variable, -counts), 
+             y = counts)) + 
+    
+        geom_bar(stat = "identity") + 
+    
+        theme(axis.text.x = element_text(angle = 90, 
+                                         hjust = 1)) + 
+    
+        labs(x = "", 
+             y = "Count", 
+             title = "Education Requirement Variable Counts")
+  
+  # Create bar graph for programming requirements.
+  ggplot(data = filter(counts_tibble, str_sub(variable, 1, 12) == "programming_"), 
+         aes(x = reorder(variable, -counts), 
+             y = counts)) + 
+    
+    geom_bar(stat = "identity") + 
+    
+    theme(axis.text.x = element_text(angle = 90, 
+                                     hjust = 1)) + 
+    
+    labs(x = "", 
+         y = "Count", 
+         title = "Programming Requirement Variable Counts")
+  
 
