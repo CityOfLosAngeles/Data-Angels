@@ -27,13 +27,13 @@ def find_courses(subject, url=base_url):
     except TimeoutException:
         print ("Loading took too much time!")
         
-    #option value = 2188, 2192
-#    select = Select(browser.find_element_by_id('CLASS_SRCH_WRK2_STRM$35$'))
-#    select.select_by_value('2192')
+    #option value = 2188 (2018 Fall), 2192 (2019 Winter), 2194 (2019 Spring)
+    select = Select(browser.find_element_by_id('CLASS_SRCH_WRK2_STRM$35$'))
+    select.select_by_value('2194')
 
-#    Search page seems to refresh / get reloaded after selecting a term.  Need to wait about 2 seconds   
-#    import time
-#    time.sleep(2)
+    #Search page seems to refresh / get reloaded after selecting a term.  Need to wait about 2 seconds   
+    import time
+    time.sleep(2)
     
     editor = browser.find_element_by_id('SSR_CLSRCH_WRK_SUBJECT$0')
     editor.send_keys(subject)
@@ -89,11 +89,14 @@ def parse_courses(subject, url=base_url):
         course_term = section.findAll("div", {"id" : re.compile('win0divMTG_TOPIC.*')})
         y = 0
         while (y < len(course_time)):
-            course = (course_title.text).replace('\xa0', '')
+            course = (course_title.text).replace('\xa0', '').split('-', 1)
+            course_code = course[0].strip()
+            course_name = course[1].strip()
             mtime = (course_time[y].text).replace('\n', '')
             term = (course_term[y].text).replace('\n', '')
             campus = (course_campus[y].text).replace('\n', '')
-            course_data = [course.split('- ')[1], mtime, term, get_campus_name(campus.split('-')[0].strip()), subject]
+            campus = campus.split('-', 1)[0].strip()
+            course_data = [course_code, course_name, mtime, term, get_campus_name(campus), subject, get_campus_address(campus)]
             dataset.append(course_data)
             y += 1
         x += 1
@@ -119,11 +122,32 @@ def get_campus_name(campus_short_name):
         return 'Los Angeles City College'
     else:
         return 'Instructional Television'
+    
+def get_campus_address(campus_short_name):
+    if (campus_short_name == 'East'):
+        return '1301 Avenida Cesar Chavez, Monterey Park, CA 91754'
+    elif (campus_short_name == 'Trade'):
+        return '400 W. Washington Blvd, Los Angeles, CA 90015'
+    elif (campus_short_name == 'Pierce'):
+        return '6201 Winnetka Avenue, Woodland Hills, CA 91371'
+    elif (campus_short_name == 'West'):
+        return '9000 Overland Avenue, Culver City, CA 90230'
+    elif (campus_short_name == 'Harbor'):
+        return '1111 Figueroa Place, Wilmington, CA 90744'
+    elif (campus_short_name == 'Southwest'):
+        return '1600 West Imperial Highway, Los Angeles, CA 90047'
+    elif (campus_short_name == 'Mission'):
+        return '13356 Eldridge Avenue, Sylmar, CA 91342'
+    elif (campus_short_name == 'City'):
+        return '855 N. Vermont Avenue, Los Angeles, CA 90029'
+    elif (campus_short_name == 'Valley'):
+        return '5800 Fulton Avenue, Valley Glen, CA 91401'
+    else:
+        return 'Instructional Television'
 
 def parse_descriptions(subject, url=base_url):
     dataset = []
     result_page = find_courses(subject, url)
-    print (result_page)
     if (result_page == ''):
         return dataset
     else:
@@ -147,8 +171,11 @@ def parse_descriptions(subject, url=base_url):
        
         course_description = result_page.find_element_by_id('DERIVED_CLSRCH_DESCRLONG')
         
-        result_page.find_element_by_id('CLASS_SRCH_WRK2_SSR_PB_BACK').click()        
-        course_detail = [(course_title.text).replace('\xa0', ''), course_description.text, subject]
+        result_page.find_element_by_id('CLASS_SRCH_WRK2_SSR_PB_BACK').click()   
+        course_title = (course_title.text).replace('\xa0', '').split('-', 1)
+        course_code = course_title[0].strip()
+        course_name = course_title[1].strip()
+        course_detail = [course_code, course_name, course_description.text]
         print (course_detail)
         dataset.append(course_detail)
         
@@ -165,7 +192,7 @@ def parse_descriptions(subject, url=base_url):
     
     return dataset
 
-def save_descriptions(subject, file_name='description'):
+def save_descriptions(subject, file_name='LA_construction_course_descriptions'):
     dataset = parse_descriptions(subject)
     with open(file_name +'.csv', 'a') as csvfile:        
         writer = csv.writer(csvfile, delimiter='\t', lineterminator = '\n')
@@ -174,7 +201,7 @@ def save_descriptions(subject, file_name='description'):
             writer.writerow(data)
     csvfile.close()
 
-def save_courses(subject, file_name='finaloutput'):
+def save_courses(subject, file_name='LA_construction_course_offerings'):
     dataset = parse_courses(subject)
     with open(file_name +'.csv', 'a') as csvfile:
         writer = csv.writer(csvfile, lineterminator = '\n')
@@ -183,5 +210,9 @@ def save_courses(subject, file_name='finaloutput'):
             writer.writerow(data)
     csvfile.close()
 
-list(map(save_descriptions, ('PLUMBNG', 'WELDG/E','PLUMBNG', 'T & M', 'OPMAINT', 'OPMA AP', 'BLDGCTQ', 'DRAFT', 'ENV', 'IND TEK', 'INT')))
-list(map(save_courses, ('PLUMBNG', 'WELDG/E','PLUMBNG', 'T & M', 'OPMAINT', 'OPMA AP', 'BLDGCTQ', 'DRAFT', 'ENV', 'IND TEK', 'INT')))
+list(map(save_descriptions, ('PLUMBNG', 'WELDG/E', 'T & M', 'OPMAINT', 'OPMA AP', 'BLDGCTQ',
+                        'DRAFT', 'ENV', 'IND TEK', 'INT', 'ST MAIN', 'REF A/C', 'MSCNC', 'MIT', 'ENG TEK',
+                        'ECONMT', 'EGT', 'ELECL', 'ELECLNM')))
+list(map(save_courses, ('PLUMBNG', 'WELDG/E', 'T & M', 'OPMAINT', 'OPMA AP', 'BLDGCTQ',
+                        'DRAFT', 'ENV', 'IND TEK', 'INT', 'ST MAIN', 'REF A/C', 'MSCNC', 'MIT', 'ENG TEK',
+                        'ECONMT', 'EGT', 'ELECL', 'ELECLNM')))
