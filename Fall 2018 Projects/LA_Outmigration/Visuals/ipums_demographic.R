@@ -95,8 +95,8 @@ by_marst <- data %>%
   summarise (No_movers = sum(PERWT))
 
 plot_marst <- ggplot(by_marst, aes(YEAR, No_movers,group = MARST, color = MARST)) + 
-            geom_line() +
-            ggtitle("LA Outmigration by Maritial Status")+ 
+            geom_line(size=0.7) +
+            ggtitle("LA Outmigration by Marital Status")+ 
             scale_color_brewer(palette="Paired") +
             theme(axis.text.x = element_text(angle = 0, hjust = 0.5),panel.background = element_blank(),
             axis.line = element_line(colour = "black"), panel.grid.major.y = element_line(colour="grey"))+
@@ -113,7 +113,7 @@ by_marst_06_17$perc[by_marst_06_17$YEAR == 2006] <- by_marst_06_17$No_movers[by_
 
 pie_marst <- ggplot(by_marst_06_17, aes(x="", y=No_movers, fill=MARST))+
               geom_bar(width = 1, stat = "identity", position = "fill") + coord_polar("y", start=0)+
-              ggtitle("LA Outmigration by Maritial Status for years 2006 and 2017")+ 
+              ggtitle("LA Outmigration by Marital Status for years 2006 and 2017")+ 
               ylab("Percentage of movers") +
               facet_grid(cols = vars(YEAR)) + 
               theme(axis.title.y=element_blank(),
@@ -137,3 +137,92 @@ plot_race <- ggplot(by_race, aes(YEAR, No_movers,group = RACE, color = RACE)) +
         axis.line = element_line(colour = "black"), panel.grid.major.y = element_line(colour="grey"))+
   scale_y_continuous(labels = comma)
 plot_race
+
+
+
+
+############################### INDIVIDUAL RENTERS #######################################
+
+#selecting the rows with no additional family income and filtering out missing values and zero rent rows
+ind_rent <- data[data$FTOTINC<=data$INCTOT & data$INCTOT!=9999999 & data$RENT!=0,]
+
+#plotting individual income renters by gender
+by_sex <- ind_rent %>% 
+  group_by(YEAR, SEX) %>%
+  summarise (No_movers = sum(PERWT))
+
+plot_by_sex <- ggplot(by_sex,aes(x = YEAR, y = No_movers,fill = SEX)) + 
+  geom_bar(position = "fill",stat = "identity") + 
+  theme(panel.background = element_blank(),
+        axis.text.x = element_text(angle = 0, hjust = 0.5))+
+  ggtitle("LA Outmigrators (Individual Income) by Sex")+
+  ylab("Percentage of movers")+
+  scale_y_continuous(labels = scales::percent)
+
+png("LA_Outmigration_individual_by_SEX.png", width = 1698, height = 1056, res = 180)
+plot_by_sex
+dev.off()
+
+#plotting individual income renters by race 
+
+#summarizing information about the residents by race
+la_residents <- read.csv("ipums_la_residents.csv")
+
+by_race_residents <- la_residents %>% 
+  group_by(YEAR, RACE) %>%
+  summarise (No_residents = sum(PERWT))
+
+by_race_out <- data %>% 
+  group_by(YEAR, RACE) %>%
+  summarise (No_movers = sum(PERWT))
+
+by_race <- merge(by_race_residents, by_race_out, by = c("YEAR", "RACE"))
+by_race$perc_out <- round(by_race$No_movers/(by_race$No_residents+by_race$No_movers)*100,2)
+by_race$YEAR <- as.factor(by_race$YEAR)
+by_race <- by_race[by_race$RACE!="Other",]
+
+plot_race <- ggplot(by_race, aes(YEAR, perc_out,group = RACE, color = RACE)) + 
+  geom_line(size=0.6) +
+  ggtitle("LA Outmigrators (Individual Income) by Race")+ 
+  ylab("Percentage of residents by race") +
+  scale_color_brewer(palette="Paired") +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5),panel.background = element_blank(),
+        axis.line = element_line(colour = "black"), panel.grid.major.y = element_line(colour="grey"))+
+  scale_y_continuous(labels = comma)
+
+png("LA_Outmigration_individual_by_RACE.png", width = 1698, height = 1056, res = 180)
+plot_race
+dev.off()
+
+#plotting marital status of individual renters
+by_marst <- ind_rent %>% 
+  group_by(YEAR, MARST) %>%
+  summarise (No_movers = sum(PERWT))
+
+plot_marst <- ggplot(by_marst, aes(YEAR, No_movers,group = MARST, color = MARST)) + 
+  geom_line(size=0.7) +
+  ggtitle("LA Outmigrators (Individual Income) by Marital Status")+ 
+  scale_color_brewer(palette="Paired") +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5),panel.background = element_blank(),
+        axis.line = element_line(colour = "black"), panel.grid.major.y = element_line(colour="grey"))+
+  scale_y_continuous(labels = comma)
+
+png("LA_Outmigration_individual_by_MARST.png", width = 1698, height = 1056, res = 180)
+plot_marst
+dev.off()
+
+#plotting age of individual renters 
+by_age <- ind_rent %>% 
+  group_by(YEAR, AGE) %>%
+  summarise (No_movers = sum(PERWT))
+
+plot_age <- ggplot(by_age, aes(AGE, No_movers, color = YEAR)) + geom_line() + scale_color_brewer(palette="Paired") +
+  scale_x_continuous(breaks=seq(0,100,10)) + 
+  ggtitle("LA Outmigrators (Individual Income) by Age") +
+  ylab("Number of movers")+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(colour = "black"), 
+        panel.grid.major.y = element_line(colour="grey"))
+png("LA_Outmigration_individual_by_AGE.png", width = 1698, height = 1056, res = 180)
+plot_age
+dev.off()
