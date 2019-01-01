@@ -101,6 +101,7 @@ by_marst <- data %>%
 plot_marst <- ggplot(by_marst, aes(YEAR, No_movers,group = MARST, color = MARST)) + 
             geom_line(size=1.5) +
             ggtitle("LA Out Migration by Marital Status")+ 
+            xlab("Year")+
             ylab("Number of Outmigrators")+
             scale_color_brewer(palette="Paired") +
             theme(axis.text.x = element_text(angle = 0, hjust = 0.5),
