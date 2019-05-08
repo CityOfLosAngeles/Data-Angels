@@ -1,0 +1,296 @@
+﻿
+00000	Not in identifiable area	
+10420	Akron, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+10580	Albany-Schenectady-Troy, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+10740	Albuquerque, NM	X	X	X	X	X	X	X	X	X	X	X	X	X
+10780	Alexandria, LA	·	·	·	·	·	X	X	X	X	X	X	X	X
+10900	Allentown-Bethlehem-Easton, PA-NJ	X	X	X	X	X	X	X	X	X	X	X	X	X
+11020	Altoona, PA	·	·	·	·	·	X	X	X	X	X	X	X	X
+11100	Amarillo, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+11260	Anchorage, AK	X	X	X	X	X	X	X	X	X	X	X	X	X
+11460	Ann Arbor, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+11500	Anniston-Oxford-Jacksonville, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+11700	Asheville, NC	X	X	X	X	X	·	·	·	·	·	·	·	·
+12020	Athens-Clarke County, GA	·	·	·	·	·	X	X	X	X	X	X	X	X
+12060	Atlanta-Sandy Springs-Roswell, GA	X	X	X	X	X	X	X	X	X	X	X	X	X
+12100	Atlantic City-Hammonton, NJ	X	X	X	X	X	X	X	X	X	X	X	X	X
+12220	Auburn-Opelika, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+12260	Augusta-Richmond County, GA-SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+12420	Austin-Round Rock, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+12540	Bakersfield, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+12580	Baltimore-Columbia-Towson, MD	X	X	X	X	X	X	X	X	X	X	X	X	X
+12620	Bangor, ME	X	X	X	X	X	X	X	X	X	X	X	X	X
+12700	Barnstable Town, MA	X	X	X	X	X	X	X	X	X	X	X	X	X
+12940	Baton Rouge, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+12980	Battle Creek, MI	·	·	·	·	·	X	X	X	X	X	X	X	X
+13140	Beaumont-Port Arthur, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+13380	Bellingham, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+13460	Bend-Redmond, OR	X	X	X	X	X	X	X	X	X	X	X	X	X
+13740	Billings, MT	·	·	·	·	·	X	X	X	X	X	X	X	X
+13780	Binghamton, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+13820	Birmingham-Hoover, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+13900	Bismarck, ND	X	X	X	X	X	·	·	·	·	·	·	·	·
+13980	Blacksburg-Christiansburg-Radford, VA	X	X	X	X	X	X	X	X	X	X	X	X	X
+14010	Bloomington, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+14020	Bloomington, IN	X	X	X	X	X	X	X	X	X	X	X	X	·
+14260	Boise City, ID	X	X	X	X	X	X	X	X	X	X	X	X	X
+14460	Boston-Cambridge-Newton, MA-NH	X	X	X	X	X	X	X	X	X	X	X	X	X
+14740	Bremerton-Silverdale, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+14860	Bridgeport-Stamford-Norwalk, CT	X	X	X	X	X	X	X	X	X	X	X	X	X
+15180	Brownsville-Harlingen, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+15380	Buffalo-Cheektowaga-Niagara Falls, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+15500	Burlington, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+15540	Burlington-South Burlington, VT	X	X	X	X	X	X	X	X	X	X	X	X	X
+15940	Canton-Massillon, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+15980	Cape Coral-Fort Myers, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+16580	Champaign-Urbana, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+16620	Charleston, WV	X	X	X	X	X	·	·	·	·	·	·	·	·
+16700	Charleston-North Charleston, SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+16740	Charlotte-Concord-Gastonia, NC-SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+16820	Charlottesville, VA	·	·	·	·	·	X	X	X	X	X	X	X	·
+16860	Chattanooga, TN-GA	X	X	X	X	X	X	X	X	X	X	X	X	X
+16980	Chicago-Naperville-Elgin, IL-IN-WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+17020	Chico, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+17140	Cincinnati, OH-KY-IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+17300	Clarksville, TN-KY	X	X	X	X	X	X	X	X	X	X	X	X	X
+17460	Cleveland-Elyria, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+17660	Coeur d'Alene, ID	X	X	X	X	X	·	·	·	·	·	·	·	·
+17780	College Station-Bryan, TX	X	X	X	X	X	X	X	X	X	X	X	X	·
+17820	Colorado Springs, CO	X	X	X	X	X	X	X	X	X	X	X	X	X
+17860	Columbia, MO	X	X	X	X	X	X	X	X	X	X	X	X	X
+17900	Columbia, SC	X	X	X	X	X	·	·	·	·	·	·	·	·
+18140	Columbus, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+18580	Corpus Christi, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+19100	Dallas-Fort Worth-Arlington, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+19300	Daphne-Fairhope-Foley, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+19340	Davenport-Moline-Rock Island, IA-IL	·	·	·	·	·	X	X	X	X	X	X	X	X
+19380	Dayton, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+19460	Decatur, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+19500	Decatur, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+19660	Deltona-Daytona Beach-Ormond Beach, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+19740	Denver-Aurora-Lakewood, CO	X	X	X	X	X	X	X	X	X	X	X	X	X
+19780	Des Moines-West Des Moines, IA	X	X	X	X	X	·	·	·	·	·	·	·	·
+19820	Detroit-Warren-Dearborn, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+20100	Dover, DE	X	X	X	X	X	X	X	X	X	X	X	X	X
+20500	Durham-Chapel Hill, NC	·	·	·	·	·	X	X	X	X	X	X	X	X
+20700	East Stroudsburg, PA	X	X	X	X	X	X	X	X	X	X	X	X	X	
+20740	Eau Claire, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+20940	El Centro, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+21060	Elizabethtown-Fort Knox, KY	·	·	·	·	·	X	X	X	X	X	X	X	X
+21140	Elkhart-Goshen, IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+21340	El Paso, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+21500	Erie, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+21660	Eugene, OR	X	X	X	X	X	X	X	X	X	X	X	X	X
+21780	Evansville, IN-KY	·	·	·	·	·	X	X	X	X	X	X	X	·
+22140	Farmington, NM	·	·	·	·	·	X	X	X	X	X	X	X	X
+22180	Fayetteville, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+22220	Fayetteville-Springdale-Rogers, AR-MO	X	X	X	X	X	X	X	X	X	X	X	X	X
+22380	Flagstaff, AZ	X	X	X	X	X	X	X	X	X	X	X	X	X
+22420	Flint, MI	·	·	·	·	·	X	X	X	X	X	X	X	X
+22500	Florence, SC	X	X	X	X	X	·	·	·	·	·	·	·	·
+22520	Florence-Muscle Shoals, AL	·	·	·	·	·	X	X	X	X	X	X	X	X
+22660	Fort Collins, CO	X	X	X	X	X	X	X	X	X	X	X	X	X
+23060	Fort Wayne, IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+23420	Fresno, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+23460	Gadsden, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+23540	Gainesville, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+23580	Gainesville, GA	X	X	X	X	X	X	X	X	X	X	X	X	X
+24020	Glens Falls, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+24140	Goldsboro, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+24300	Grand Junction, CO	X	X	X	X	X	X	X	X	X	X	X	X	X
+24340	Grand Rapids-Wyoming, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+24540	Greeley, CO	·	·	·	·	·	X	X	X	X	X	X	X	X
+24660	Greensboro-High Point, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+24780	Greenville, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+24860	Greenville-Anderson-Mauldin, SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+25060	Gulfport-Biloxi-Pascagoula, MS	X	X	X	X	X	X	X	X	X	X	X	X	X
+25220	Hammond, LA	·	·	·	·	·	X	X	X	X	X	X	X	X
+25260	Hanford-Corcoran, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+25420	Harrisburg-Carlisle, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+25500	Harrisonburg, VA	X	X	X	X	X	·	·	·	·	·	·	·	·
+25540	Hartford-West Hartford-East Hartford, CT	X	X	X	X	X	X	X	X	X	X	X	X	X
+25620	Hattiesburg, MS	·	·	·	·	·	X	X	X	X	X	X	X	X
+25860	Hickory-Lenoir-Morganton, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+25940	Hilton Head Island-Bluffton-Beaufort, SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+26140	Homosassa Springs, FL	X	X	X	X	X	·	·	·	·	·	·	·	·
+26380	Houma-Thibodaux, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+26420	Houston-The Woodlands-Sugar Land, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+26620	Huntsville, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+26900	Indianapolis-Carmel-Anderson, IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+26980	Iowa City, IA	X	X	X	X	X	X	X	X	X	X	X	X	·
+27060	Ithaca, NY	X	X	X	X	X	·	·	·	·	·	·	·	·
+27100	Jackson, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+27140	Jackson, MS	X	X	X	X	X	X	X	X	X	X	X	X	·
+27180	Jackson, TN	X	X	X	X	X	X	X	X	X	X	X	X	X
+27260	Jacksonville, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+27340	Jacksonville, NC	·	·	·	·	·	X	X	X	X	X	X	X	X	
+27500	Janesville-Beloit, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+27620	Jefferson City, MO	X	X	X	X	X	·	·	·	·	·	·	·	·
+27780	Johnstown, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+27900	Joplin, MO	X	X	X	X	X	X	X	X	X	X	X	X	X
+28020	Kalamazoo-Portage, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+28100	Kankakee, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+28140	Kansas City, MO-KS	X	X	X	X	X	X	X	X	X	X	X	X	X
+28420	Kennewick-Richland, WA	·	·	·	·	·	X	X	X	X	X	X	X	X
+28660	Killeen-Temple, TX	·	·	·	·	·	X	X	X	X	X	X	X	X
+28700	Kingsport-Bristol-Bristol, TN-VA	·	·	·	·	·	X	X	X	X	X	X	X	X
+28940	Knoxville, TN	X	X	X	X	X	X	X	X	X	X	X	X	X
+29100	La Crosse-Onalaska, WI-MN	X	X	X	X	X	X	X	X	X	X	X	X	·
+29180	Lafayette, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+29200	Lafayette-West Lafayette, IN	X	X	X	X	X	·	·	·	·	·	·	·	·
+29340	Lake Charles, LA	·	·	·	·	·	X	X	X	X	X	X	X	X
+29420	Lake Havasu City-Kingman, AZ	X	X	X	X	X	X	X	X	X	X	X	X	X
+29460	Lakeland-Winter Haven, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+29540	Lancaster, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+29620	Lansing-East Lansing, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+29700	Laredo, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+29740	Las Cruces, NM	X	X	X	X	X	X	X	X	X	X	X	X	X
+29820	Las Vegas-Henderson-Paradise, NV	X	X	X	X	X	X	X	X	X	X	X	X	X
+29940	Lawrence, KS	X	X	X	X	X	·	·	·	·	·	·	·	·
+30140	Lebanon, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+30340	Lewiston-Auburn, ME	X	X	X	X	X	X	X	X	X	X	X	X	X
+30620	Lima, OH	X	X	X	X	X	·	·	·	·	·	·	·	·
+30700	Lincoln, NE	X	X	X	X	X	X	X	X	X	X	X	X	X
+30780	Little Rock-North Little Rock-Conway, AR	X	X	X	X	X	X	X	X	X	X	X	X	X
+31080	Los Angeles-Long Beach-Anaheim, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+31140	Louisville/Jefferson County, KY-IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+31180	Lubbock, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+31340	Lynchburg, VA	X	X	X	X	X	X	X	X	X	X	X	X	X
+31460	Madera, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+31700	Manchester-Nashua, NH	X	X	X	X	X	X	X	X	X	X	X	X	X
+31900	Mansfield, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+32420	Mayagüez, PR	·	·	·	·	·	·	·	·	·	·	·	·	·
+32580	McAllen-Edinburg-Mission, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+32780	Medford, OR	X	X	X	X	X	X	X	X	X	X	X	X	X
+32820	Memphis, TN-MS-AR	X	X	X	X	X	X	X	X	X	X	X	X	X
+32900	Merced, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+33100	Miami-Fort Lauderdale-West Palm Beach, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+33140	Michigan City-La Porte, IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+33260	Midland, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+33340	Milwaukee-Waukesha-West Allis, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+33460	Minneapolis-St. Paul-Bloomington, MN-WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+33660	Mobile, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+33700	Modesto, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+33740	Monroe, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+33780	Monroe, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+33860	Montgomery, AL	X	X	X	X	X	X	X	X	X	X	X	X	X
+34060	Morgantown, WV	X	X	X	X	X	X	X	X	X	X	X	X	X
+34620	Muncie, IN	X	X	X	X	X	X	X	X	X	X	X	X	X
+34740	Muskegon, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+34820	Myrtle Beach-Conway-North Myrtle Beach, SC-NC	X	X	X	X	X	·	·	·	·	·	·	·	·
+34900	Napa, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+34940	Naples-Immokalee-Marco Island, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+34980	Nashville-Davidson--Murfreesboro--Franklin, TN	X	X	X	X	X	X	X	X	X	X	X	X	X
+35300	New Haven-Milford, CT	X	X	X	X	X	X	X	X	X	X	X	X	X
+35380	New Orleans-Metairie, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+35620	New York-Newark-Jersey City, NY-NJ-PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+35660	Niles-Benton Harbor, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+35840	North Port-Sarasota-Bradenton, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+35980	Norwich-New London, CT	X	X	X	X	X	X	X	X	X	X	X	X	X
+36100	Ocala, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+36140	Ocean City, NJ	X	X	X	X	X	X	X	X	X	X	X	X	X
+36220	Odessa, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+36260	Ogden-Clearfield, UT	X	X	X	X	X	X	X	X	X	X	X	X	X
+36420	Oklahoma City, OK	X	X	X	X	X	X	X	X	X	X	X	X	X
+36500	Olympia-Tumwater, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+36540	Omaha-Council Bluffs, NE-IA	X	X	X	X	X	X	X	X	X	X	X	X	X
+36740	Orlando-Kissimmee-Sanford, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+36780	Oshkosh-Neenah, WI	X	X	X	X	X	·	·	·	·	·	·	·	·
+36980	Owensboro, KY	X	X	X	X	X	X	X	X	X	X	X	X	X
+37100	Oxnard-Thousand Oaks-Ventura, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+37340	Palm Bay-Melbourne-Titusville, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+37460	Panama City, FL	·	·	·	·	·	X	X	X	X	X	X	X	X
+37620	Parkersburg-Vienna, WV	X	X	X	X	X	·	·	·	·	·	·	·	·
+37860	Pensacola-Ferry Pass-Brent, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+37900	Peoria, IL	·	·	·	·	·	X	X	X	X	X	X	X	X
+37980	Philadelphia-Camden-Wilmington, PA-NJ-DE-MD	X	X	X	X	X	X	X	X	X	X	X	X	X
+38060	Phoenix-Mesa-Scottsdale, AZ	X	X	X	X	X	X	X	X	X	X	X	X	X
+38300	Pittsburgh, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+38340	Pittsfield, MA	X	X	X	X	X	X	X	X	X	X	X	X	X
+38660	Ponce, PR	·	·	·	·	·	·	·	·	·	·	·	·	·
+38860	Portland-South Portland, ME	X	X	X	X	X	X	X	X	X	X	X	X	X
+38900	Portland-Vancouver-Hillsboro, OR-WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+38940	Port St. Lucie, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+39140	Prescott, AZ	X	X	X	X	X	X	X	X	X	X	X	X	X
+39300	Providence-Warwick, RI-MA	X	X	X	X	X	X	X	X	X	X	X	X	X
+39340	Provo-Orem, UT	X	X	X	X	X	X	X	X	X	X	X	X	X
+39380	Pueblo, CO	X	X	X	X	X	X	X	X	X	X	X	X	X
+39460	Punta Gorda, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+39540	Racine, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+39580	Raleigh, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+39740	Reading, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+39820	Redding, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+39900	Reno, NV	X	X	X	X	X	X	X	X	X	X	X	X	X
+40060	Richmond, VA	X	X	X	X	X	X	X	X	X	X	X	X	X
+40140	Riverside-San Bernardino-Ontario, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+40220	Roanoke, VA	X	X	X	X	X	·	·	·	·	·	·	·	·
+40380	Rochester, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+40420	Rockford, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+40580	Rocky Mount, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+40900	Sacramento--Roseville--Arden-Arcade, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+40980	Saginaw, MI	X	X	X	X	X	X	X	X	X	X	X	X	X
+41060	St. Cloud, MN	·	·	·	·	·	X	X	X	X	X	X	X	X
+41100	St. George, UT	X	X	X	X	X	·	·	·	·	·	·	·	·
+41140	St. Joseph, MO-KS	X	X	X	X	X	·	·	·	·	·	·	·	·
+41180	St. Louis, MO-IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+41500	Salinas, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+41540	Salisbury, MD-DE	X	X	X	X	X	X	X	X	X	X	X	X	X
+41620	Salt Lake City, UT	X	X	X	X	X	X	X	X	X	X	X	X	X
+41660	San Angelo, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+41700	San Antonio-New Braunfels, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+41740	San Diego-Carlsbad, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+41860	San Francisco-Oakland-Hayward, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+41900	San Germán, PR	·	·	·	·	·	·	·	·	·	·	·	·	·
+41940	San Jose-Sunnyvale-Santa Clara, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+41980	San Juan-Carolina-Caguas, PR	·	·	·	·	·	·	·	·	·	·	·	·	·
+42020	San Luis Obispo-Paso Robles-Arroyo Grande, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42100	Santa Cruz-Watsonville, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42140	Santa Fe, NM	X	X	X	X	X	X	X	X	X	X	X	X	X
+42200	Santa Maria-Santa Barbara, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42220	Santa Rosa, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42540	Scranton--Wilkes-Barre--Hazleton, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42660	Seattle-Tacoma-Bellevue, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+42680	Sebastian-Vero Beach, FL	X	X	X	X	X	·	·	·	·	·	·	·	·
+43100	Sheboygan, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+43340	Shreveport-Bossier City, LA	X	X	X	X	X	X	X	X	X	X	X	X	X
+43900	Spartanburg, SC	X	X	X	X	X	X	X	X	X	X	X	X	X
+44060	Spokane-Spokane Valley, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+44100	Springfield, IL	X	X	X	X	X	X	X	X	X	X	X	X	X
+44140	Springfield, MA	X	X	X	X	X	X	X	X	X	X	X	X	X
+44180	Springfield, MO	X	X	X	X	X	X	X	X	X	X	X	X	X
+44220	Springfield, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+44300	State College, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+44700	Stockton-Lodi, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+44940	Sumter, SC	·	·	·	·	·	X	X	X	X	X	X	X	X
+45060	Syracuse, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+45220	Tallahassee, FL	·	·	·	·	·	X	X	X	X	X	X	X	X
+45300	Tampa-St. Petersburg-Clearwater, FL	X	X	X	X	X	X	X	X	X	X	X	X	X
+45460	Terre Haute, IN	·	·	·	·	·	X	X	X	X	X	X	X	X
+45780	Toledo, OH	X	X	X	X	X	X	X	X	X	X	X	X	X
+45820	Topeka, KS	X	X	X	X	X	·	·	·	·	·	·	·	·
+45940	Trenton, NJ	X	X	X	X	X	X	X	X	X	X	X	X	X
+46060	Tucson, AZ	X	X	X	X	X	X	X	X	X	X	X	X	X
+46220	Tuscaloosa, AL	X	X	X	X	X	·	·	·	·	·	·	·	·
+46340	Tyler, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+46520	Urban Honolulu, HI	X	X	X	X	X	X	X	X	X	X	X	X	X
+46540	Utica-Rome, NY	X	X	X	X	X	X	X	X	X	X	X	X	X
+46660	Valdosta, GA	·	·	·	·	·	X	X	X	X	X	X	X	X
+46700	Vallejo-Fairfield, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+47220	Vineland-Bridgeton, NJ	·	·	·	·	·	X	X	X	X	X	X	X	X
+47260	Virginia Beach-Norfolk-Newport News, VA-NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+47300	Visalia-Porterville, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+47380	Waco, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+47900	Washington-Arlington-Alexandria, DC-VA-MD-WV	X	X	X	X	X	X	X	X	X	X	X	X	X
+48140	Wausau, WI	X	X	X	X	X	X	X	X	X	X	X	X	X
+48300	Wenatchee, WA	X	X	X	X	X	·	·	·	·	·	·	·	·
+48620	Wichita, KS	X	X	X	X	X	X	X	X	X	X	X	X	X
+48660	Wichita Falls, TX	X	X	X	X	X	X	X	X	X	X	X	X	X
+48700	Williamsport, PA	·	·	·	·	·	X	X	X	X	X	X	X	X
+48900	Wilmington, NC	X	X	X	X	X	·	·	·	·	·	·	·	·
+49180	Winston-Salem, NC	X	X	X	X	X	X	X	X	X	X	X	X	X
+49340	Worcester, MA-CT	X	X	X	X	X	X	X	X	X	X	X	X	X
+49420	Yakima, WA	X	X	X	X	X	X	X	X	X	X	X	X	X
+49620	York-Hanover, PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+49660	Youngstown-Warren-Boardman, OH-PA	X	X	X	X	X	X	X	X	X	X	X	X	X
+49700	Yuba City, CA	X	X	X	X	X	X	X	X	X	X	X	X	X
+49740	Yuma, AZ
