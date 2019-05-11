@@ -95,4 +95,4 @@ Cons:
 Next steps: all are dependent on discussion of the group
 -Pull 1-year data; also, search for any other possible data sources
 -Calculate year-over-year changes
--End goal: provide a file that can be merged to the level (i.e., neighborhood) and year of the rent price to test correlations, investigate relationships, and model 
+-End goal: provide a file that can be merged to the level (i.e., neighborhood) and year of the rent price data to test correlations, investigate relationships, and create emodel 
