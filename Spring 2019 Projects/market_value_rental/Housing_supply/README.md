@@ -1,0 +1,90 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "*Submitted by Jane Liang * \n",
+    "---------------------------------------------\n",
+    "\n",
+    "# Problem Statement\n",
+    "\n",
+    "- Investigate a general trends on housing supply over time. \n",
+    "\n",
+    "- Which neighborhoods provide highest/lowest housing supply?\n",
+    "\n",
+    "- Generate choropleth maps to show the change of housing supply from 2013 to 2019\n",
+    "\n",
+    "# Dataset Description\n",
+    "\n",
+    "[\"A Certificate of Occupancy\"](https://data.lacity.org/A-Safe-City/Building-and-Safety-Certificate-of-Occupancy/3f9m-afei) is a document issued by the Department of Building and Safety certifying a building's compliance with applicable building codes and other laws, and indicating it to be in a condition suitable for occupancy. The data is cleaned for including only building related information and saved as [\"Certificates of Occupancy AD Edited -Data.csv\"](./Data/Certificates%20of%20Occupancy%20AD%20Edited%20-%20Data.csv) before conducting initial investigation. \n",
+    "\n",
+    "# Key Takeaways:\n",
+    "\n",
+    "![fig_1](./Image/fig_1.png)\n",
+    "- The new buildings are mainly 1 or 2 Family Dwelling units.\n",
+    "\n",
+    "\n",
+    "![fig_2](./Image/fig_2.png)\n",
+    "- The most housing units are provided by Apartment buildings\n",
+    "\n",
+    "\n",
+    "![fig_3](./Image/fig_3.png)\n",
+    "- The number of housing units increases over time during 2013 to 2016\n",
+    "- In 2017, the lower number of housing units are built than in 2016\n",
+    "- In 2018, the number of housing units increases again\n",
+    "\n",
+    "\n",
+    "![fig_4](./Image/fig_4.png)\n",
+    "- The most commercial buildings are built in \"Downtown\" LA\n",
+    "- There are limited number of commercial buildings are constructed during 2013 to present (range from 0 to 12)\n",
+    "\n",
+    "\n",
+    "![fig_5](./Image/fig_5.png)\n",
+    "- The most Apartment buildings are built in \"Playa Vista\"\n",
+    "\n",
+    "![fig_6](./Image/fig_6.png)\n",
+    "- The most Family Dwellings are built in \"Chatsworth\"\n",
+    "\n",
+    "![Optional](./Image/fig_option.png)\n",
+    "- The most popular family homes are 2-story home.\n",
+    "- The number of two and three story homes are increasing over time\n",
+    "- The number of one-story homes hasn't increased much over time\n",
+    "\n",
+    "\n",
+    "# Interactive map\n",
+    "\n",
+    "[New buildings at neighborhood level](./Image/building_map.html)\n",
+    "\n",
+    "\n",
+    "[New housing units at neighborhood level](./Image/homes_map.html)\n",
+    "\n",
+    "# Future Work:\n",
+    "\n",
+    "- Investigate the relationship between prices of housing and housing supply.\n",
+    "- Is the housing supply keep pace with demand(e.g. population growth)?\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
