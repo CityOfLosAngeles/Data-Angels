@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<descript>
+<abstract>This neighborhood layer is taken from the Los Angeles Times Mapping LA neighborhood boundaries. Neighborhoods that cross multiple city boundaries have been clipped in ArcMap to only include the portions that are within Los Angeles City boundaries. Read more about the Los Angeles Times Mapping LA project.</abstract>
+<purpose>LA Times defined Los Angeles Neighborhoods</purpose>
+</descript>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>neighborhoods</themekey>
+</theme>
+</keywords>
+<accconst>None</accconst>
+<useconst/>
+<datacred>Los Angeles Times</datacred>
+</idinfo>
+<metainfo>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>
