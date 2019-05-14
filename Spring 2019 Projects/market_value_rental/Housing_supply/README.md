@@ -1,5 +1,4 @@
-*Submitted by Jane Liang * 
----------------------------------------------
+*Submitted by Jane Liang*
 
 # Problem Statement
 
