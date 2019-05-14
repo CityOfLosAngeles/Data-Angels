@@ -47,7 +47,7 @@
 
 # Interactive map
 
-[New buildings at neighborhood level](./Image/building_map.html)
+![New buildings at neighborhood level](./Image/Building.png)
 
 
 [New housing units at neighborhood level](./Image/homes_map.html)
