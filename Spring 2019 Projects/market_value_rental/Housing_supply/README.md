@@ -54,7 +54,7 @@
 ### New housing units at neighborhood level
 ![New housing units at neighborhood level](./Image/visualization(1).png)
 
-# Future Work:
+# Future Works:
 
 - Investigate the relationship between prices of housing and housing supply.
 - Is the housing supply keep pace with demand(e.g. population growth)?
