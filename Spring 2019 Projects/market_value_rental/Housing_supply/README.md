@@ -47,10 +47,12 @@
 
 # Interactive map
 
+### New buildings at neighborhood level
 ![New buildings at neighborhood level](./Image/Building.png)
 
 
-[New housing units at neighborhood level](./Image/homes_map.html)
+### New housing units at neighborhood level
+![New housing units at neighborhood level](./Image/visualization(1).png)
 
 # Future Work:
 
