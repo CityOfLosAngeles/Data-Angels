@@ -9,10 +9,10 @@ import tweepy
 import csv
 import sys
 
-consumer_key= 'H0xTEO10552phBRGldiARcav3'
-consumer_secret= 'YWVzPAmM1YW0xiQJbm08PIA746zcV6wL7zRgwd7AhOOzoqOgKH'
-access_token= '278842469-mnWrFmwC7HqFOPP65n56n1rgic0Lo1PWThQs90zO'
-access_token_secret= 'wKRg08cd8BEHbLB5WaBmACguIdTob6Xp5fdmoo5yWEx1C'
+consumer_key= 'xxxx'
+consumer_secret= 'xxx'
+access_token= 'xxxx'
+access_token_secret= 'xxxx'
 
 def search_tweets(query):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -20,7 +20,7 @@ def search_tweets(query):
     api = tweepy.API(auth)
     
     search_term = query
-    with open('tweets-test.csv', 'a', encoding="utf-8",  newline='') as csvfile:
+    with open('tweets.csv', 'a', encoding="utf-8",  newline='') as csvfile:
         tweetData = csv.writer(csvfile)
         for tweet in tweepy.Cursor(api.search, q=query + ' -RT', lang = "en", geocode="34.052235,-118.243683,20mi", tweet_mode="extended").items():
             if tweet.coordinates is not None:
