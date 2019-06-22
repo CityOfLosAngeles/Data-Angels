@@ -16,7 +16,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score, roc_curve
+from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score, roc_curve, f1_score
 
 import random
 
@@ -139,17 +139,16 @@ Classifiers = [
     SVC(kernel="rbf", C=0.025, probability=True),
     DecisionTreeClassifier(),
     RandomForestClassifier(n_estimators=200),
-    AdaBoostClassifier(),
-    GaussianNB()]
+    AdaBoostClassifier()]
 
 del(indices, Tweet, Tweet2, train, train2, test, test2, test_clean_tweet, train_clean_tweet, tweet)
 dense_features=train_features.toarray()
 dense_test= test_features.toarray()
 
-results = pandas.DataFrame(columns = ['Model', 'Accuracy', 'Precision', 'Recall', 'AUC'])
+results = pandas.DataFrame(columns = ['Model', 'Accuracy', 'Precision', 'Recall', 'AUC', 'F1'])
 
 
-for classifier in Classifiers:                # 525PM. KNN, Decision Tree, Adaboost take a while. Memory error on Adaboost
+for classifier in Classifiers:                # Takes a while
     try:
         fit = classifier.fit(train_features, all_train['sentiment'])
         pred = fit.predict(test_features)
@@ -164,21 +163,21 @@ for classifier in Classifiers:                # 525PM. KNN, Decision Tree, Adabo
     precision = round(precision_score(pred, all_test['sentiment']), 2)
     recall = round(recall_score(pred, all_test['sentiment']), 2)
     auc = round(roc_auc_score(y_true = all_test['sentiment'], y_score = prob[1]), 2)
+    f1 = round(f1_score(pred, all_test['sentiment']), 2)
     
     # ROC plot
     fpr, tpr, threshold = roc_curve(y_true = all_test['sentiment'], y_score = prob[1])
     plt.title(str(classifier.__class__.__name__))
     plt.plot(fpr, tpr)
-    #plt.savefig("model_plots/" + str(classifier.__class__.__name__) + ".jpg")
     
     to_append = pandas.DataFrame({'Model': [classifier.__class__.__name__], 
                       'Accuracy': [accuracy], 
                       'Precision': [precision], 
                       'Recall': [recall], 
-                      'AUC': [auc]})
+                      'AUC': [auc], 
+                      'F1': [f1]})
     results = results.append(to_append)
     
-    #Accuracy.append(accuracy)
     print(classifier.__class__.__name__)
     
 results
