@@ -37,6 +37,7 @@ Tweet2.head()
 # Using the full data hits a memory error. So I sample.
 
 # Get indices of rows to sample from "Tweet2"
+random.seed(20190707)
 indices = random.sample(range(0, len(Tweet2)), 
                         int(len(Tweet2) / 64))
 
@@ -141,7 +142,7 @@ Classifiers = [
     AdaBoostClassifier()]
 
 del(indices, Tweet, Tweet2, train, train2, test, test2, test_clean_tweet, train_clean_tweet, tweet)
-dense_features=train_features.toarray()
+dense_features = train_features.toarray()
 dense_test= test_features.toarray()
 
 results = pandas.DataFrame(columns = ['Model', 'Accuracy', 'Precision', 'Recall', 'AUC', 'F1'])
@@ -190,8 +191,6 @@ results
 Classifiers = [RandomForestClassifier(n_estimators=200)]
 
 del(indices, Tweet, Tweet2, train, train2, test, test2, test_clean_tweet, train_clean_tweet, tweet)
-dense_features=train_features.toarray()
-dense_test= test_features.toarray()
 
 rf_results = pandas.DataFrame(columns = ['Model', 'Accuracy', 'Precision', 'Recall', 'AUC', 'F1'])
 rf_object = []
@@ -203,8 +202,8 @@ for classifier in Classifiers:
         prob = pandas.DataFrame(fit.predict_proba(test_features))
     except Exception:
         fit = classifier.fit(dense_features, all_train['sentiment'])
-        pred = fit.predict(dense_test)
-        prob = pandas.DataFrame(fit.predict_proba(test_features))
+    #    pred = fit.predict(dense_test)
+    #    prob = pandas.DataFrame(fit.predict_proba(test_features))
         
     rf_object.append(fit)
         
@@ -242,5 +241,27 @@ new_data = new_data_orig[["text"]]
 new_data['clean_tweet'] = new_data['text'].apply(lambda x: tweet_to_words(x))
 new_data['Tweet_length'] = new_data['text'].apply(lambda x: clean_tweet_length(x))  
 new_data = new_data[["clean_tweet", "Tweet_length"]]
+
+new_tweet = []
+for tweet in new_data['clean_tweet']:
+    new_tweet.append(tweet)
+
+# Must have vocabulary fitted above!
+new_features= v.transform(new_tweet)  
+
+# Generate predictions on new data
+new_pred = rf.predict(new_features)
+
+new_data_orig['pred'] = pandas.Series(new_pred)
+new_data_orig.to_csv("results.csv")
+
+new_data_orig[new_data_orig.term == "gentrification"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "RentControl"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "Displacement"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "OpportunityZone"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "AffordableHousing"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "EndHomeless"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "Migration"].pred.value_counts(normalize = True)
+new_data_orig[new_data_orig.term == "MissingMiddle"].pred.value_counts(normalize = True)
 
 
