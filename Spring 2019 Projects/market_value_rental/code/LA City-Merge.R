@@ -30,11 +30,13 @@ hhs<-read.csv("Households__LA_.csv",header=TRUE)
 glimpse(hhs)
 table(hhs$Year)#2010 to 2017
 table(hhs$Variable)
+table(hhs$Denominator.Description)
 
 hhs_count<- hhs %>%
-  filter(Variable!="Average Household Size") %>%
+  filter(Denominator.Description=="Total Households") %>%
   group_by(GEOID,Neighborhood,Year)%>%
-  summarise(HHs = sum(as.numeric(Count)), HH_rows = n())
+  summarise(HHs = sum(as.numeric(Denominator)),
+            HH_rows = n())
 
 ######################
 #median rent price
@@ -239,7 +241,7 @@ combined<-final_stacked %>%
   left_join(stab_weight,by=c('Year','GEOID','Tract.Number','Neighborhood','Latitude','Longitude')) %>%
   left_join(race_wide,by=c('Year','GEOID','Tract.Number','Neighborhood','Latitude','Longitude'))
 
-#review the distinct values later  
+#review the distinct values  
 check<-combined %>%
   distinct(Year,GEOID,Neighborhood,.keep_all = TRUE)
 
@@ -261,10 +263,18 @@ glimpse(combined_final)
 combined_final_LA<- combined_final %>%
   filter(!is.na(name))
 
+#TEST
+check<- combined_final %>%
+  filter(is.na(name))
+neighborhoods<-data.frame(table(check$Neighborhood))
+neighborhoods_nonLA<- neighborhoods %>%
+  filter(Freq>0)
+
 #######################
 #SUM AND WEIGHT
 #######################
 weighted_LA_DATA <- combined_final_LA %>%
+  mutate(HHs_Rent=Renter_Households) %>% #replace total HHs with renter HHs
   group_by(Year,name) %>%
   mutate(Rent_W=Median_Rent*HHs_Rent,
          Income_W=Median_Income*Income_HHs
@@ -341,3 +351,7 @@ weighted_LA_DATA_final<-weighted_LA_DATA_final %>%
 #export to CSV
 write.csv(weighted_LA_DATA_final, 
           file = "weighted_LA_DATA_final.csv")
+
+# test<-weighted_LA_DATA_final%>%
+#   mutate(flag=ifelse(HHs_Rent==Income_HHs,1,0))
+# table(test$flag)
