@@ -3,3 +3,102 @@ L.A. Times Neighborhoods: https://drive.google.com/drive/folders/1SddQv7lr2wGm2p
 ACS files: previous described in "README - LA NDSC - Demographic Data"
 
 Description of process:
+Files:
+#*Households
+Source: https://usc.data.socrata.com/stories/s/cz7b-5e97/
+File: Households__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2017
+
+Records: 93,750
+After limiting the file to just the count of Total Households:
+18,750
+
+*Note: the Households file was used to weight Median Houshould Income but serves no other purpose.
+
+#Median Rent Price
+Source: https://usc.data.socrata.com/stories/s/ixs3-d9k3
+File: Rent_Price__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2016
+
+Records: 16,055
+After excluding NA:
+16,052
+
+#Median Household Income
+Source: https://usc.data.socrata.com/stories/s/u9tw-axc2/
+File: Income__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2016
+
+Records: 16,178
+After excluding NA:
+16,170
+
+#Employment
+Source: https://usc.data.socrata.com/stories/s/3qpn-46hd/
+File: Employment__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2017
+
+Records: 37,500
+After limiting to "Unemployment Rate": 
+18,529
+
+#Rent Burden
+Rent-Burdened Population: 
+"The percentage of renters paying more than 30 percent of their 
+monthly income on rent and utilities."
+Source: https://usc.data.socrata.com/stories/s/49nw-b758/
+File: Rent_Burden__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2017
+
+Records: 18,396
+
+#Overcrowding
+Overcrowded Households: 
+"The percentage of households with more than one person per one room of their housing unit."
+Source: https://usc.data.socrata.com/stories/s/7bwa-87rn/
+File: Overcrowding__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2017
+
+Records: 18,495
+
+#Housing stability
+Housing Stability: 
+"The percentage of households living in the same housing unit as they were one year ago."
+Source: https://usc.data.socrata.com/stories/s/57bz-bd25/
+File: Housing_Stability__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2017
+
+Records: 18,524
+
+#Race
+Source: https://usc.data.socrata.com/stories/s/pd65-xuak/
+File: Race___Ethnicity__LA_.csv
+Level: Census Tract,Year
+Years: 2010 to 2016
+
+Records: 130,280 
+After transposing race categories to Census Tract, Year level: 
+16,285
+
+##Merging the fields by Census Tract, Year Level:
+The final universe of possible Census Tract, Year combinations:
+18,634
+
+#LA City Shapefile
+Source: http://geohub.lacity.org/datasets/d6c55385a0e749519f238b77135eafac_0?page=9
+File: LA_Times_Neighborhoods.shp
+
+The ACS files represent LA County.  The shapefile was merged to limit the census tracts to the City of LA.
+Records: from 18,634 to 7,926
+
+###################################
+Weighting
+###################################
+The 7,926 Census Tract, Year records were then summed by Neighborhood name and Year for weighting.
