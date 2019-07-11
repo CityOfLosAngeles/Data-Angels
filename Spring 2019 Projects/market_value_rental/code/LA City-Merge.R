@@ -21,8 +21,8 @@ setwd("/Users/alfonsoberumen/Desktop/City Files/SOCRATA")
 library(sf)
 library(rgdal)
 shape <-rgdal::readOGR("/Users/alfonsoberumen/Desktop/City Files/SOCRATA/LA_Times_Neighborhoods.shp")
-str(shape)
 
+glimpse(shape)
 ######################
 #households
 ######################
@@ -179,7 +179,7 @@ race_wide <- reshape2::dcast(race_weight,
                   Longitude ~
                   Race,
                   value.var = "Race_Count")
-
+table(race_wide$Year)
 ##############################################
 #COMBINED FILE
 ##############################################
@@ -308,11 +308,9 @@ weighted_LA_DATA <- combined_final_LA %>%
                                         Population.of.Two.or.More.Races,
                                         White.Population,na.rm=TRUE))
 
-            
-            
 weighted_LA_DATA_final<-weighted_LA_DATA %>%
                         mutate(Weighted_Median_Rent=(Rent_W/HHs_Rent),
-                               Weighted_Median_Income=(Income_W/HHs_Rent),
+                               Weighted_Median_Income=(Income_W/Income_HHs),
                                Unemployment_Rate=(Unemploy_Count/Labor_Force_Pop),
                                Rent_Burden_Rate=(Burden_Count/Renter_Households),
                                Overcrowded_Rate=(Overcrowd_Count/Total_Households),
@@ -345,12 +343,12 @@ weighted_LA_DATA_final<-weighted_LA_DATA_final %>%
                   ifelse(Year==2014,"2010-14",
                   ifelse(Year==2015,"2011-15",
                   ifelse(Year==2016,"2012-16",
-                  ifelse(Year==2017,"2013-17",
+                  ifelse(Year==2017,"2013-17"
                          )))))))))
 
 #export to CSV
 write.csv(weighted_LA_DATA_final, 
-          file = "weighted_LA_DATA_final.csv")
+          file = "weighted_LA_DATA_final-v2.csv")
 
 # test<-weighted_LA_DATA_final%>%
 #   mutate(flag=ifelse(HHs_Rent==Income_HHs,1,0))
