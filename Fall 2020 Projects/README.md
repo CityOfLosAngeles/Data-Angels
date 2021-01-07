@@ -9,4 +9,4 @@ Data is pulled from three main sources:
 3) LA zip code data is also web scraped in the process from the [LA Almanac](http://www.laalmanac.com/communications/cm02_communities.php).
 
 ## Output
-Model produces risk estimates at the location level (point of interest) throughout the Los Angeles County. The model was built as a more granular version of built by researchers and PhD students at USC's Autonomous Networks Research Group. 
+Model produces risk estimates at the location level (point of interest) throughout the Los Angeles County. The model was built as a more granular version of built by researchers and PhD students at USC's Autonomous Networks Research Group, which can be found [here](https://github.com/ANRGUSC/covid19_risk_estimation).
